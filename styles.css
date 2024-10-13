@@ -1,0 +1,150 @@
+body {
+    font-family: Inter;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    min-width: 350px;
+    margin: auto;
+    background: #fff;
+    padding: 0px 20px 20px 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.heading>h1 {
+    padding: 5px;
+    color: #FF6B82;
+    font-weight: 600;
+    /* font-size: 20px */
+}
+
+.line {
+    width: 150px;
+    height: 2px;
+    background-color: #C8C8C8;
+}
+
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #313030;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+    background-color: #FF6B82;
+}
+
+.active-box {
+    display: none;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.underlined-text {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.product {
+    border: 1px solid #C8C8C8;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+}
+
+.item-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.discount-tag {
+    color: #fff;
+    background-color: #FF6B82;
+    padding: 5px;
+    margin-left: 2px;
+}
+
+.cart {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #FF6B82;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #dd596d;
+    ;
+}
+
+table {
+    padding: 10px 0 30px 30px;
+}
+
+#add-to-cart {
+    width: 100%;
+}
+.size-color-box{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .line {
+        width: 80px;
+    }
+
+    .heading>h1 {
+        font-size: 20px;
+    }
+
+    .discount-tag {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
